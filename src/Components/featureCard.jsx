@@ -49,7 +49,8 @@ const FeatureSection = () => {
       <div className="absolute bottom-20 left-10 w-32 h-32 bg-white/10 rounded-full blur-xl" />
 
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-white mb-16 text-center">
+        {/* Heading with mobile and large screen responsiveness */}
+        <h2 className="text-4xl md:text-5xl font-bold text-white mb-16 text-center md:text-left pl-4">
           What Sets Us Apart?
         </h2>
 
