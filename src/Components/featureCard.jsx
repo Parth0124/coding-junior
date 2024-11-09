@@ -73,7 +73,7 @@ const FeatureSection = () => {
                 <h3 className="text-lg font-semibold text-blue-500">
                   {feature.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed text-sm">
+                <p className="text-gray-600 leading-relaxed text-xs">
                   {feature.description}
                 </p>
               </div>
