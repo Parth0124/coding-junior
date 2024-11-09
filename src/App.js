@@ -5,6 +5,7 @@ import FeatureSection from './Components/featureCard'
 import Programs from './Components/programs';
 import Recognition from './Components/recognitions'
 import LearningJourney from './Components/learningJourney'
+import Testimonials from './Components/testimonial'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Programs />
       <Recognition />
       <LearningJourney />
+      <Testimonials />
     </div>
   );
 }
