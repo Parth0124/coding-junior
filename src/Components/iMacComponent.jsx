@@ -6,11 +6,14 @@ import school from "../Assets/school.png";
 import graduation from "../Assets/graduation.png";
 import notes from "../Assets/notes.png";
 import location from "../Assets/location.png";
+import slantLines from "../Assets/slant-lines-below-institutes.jpg";
+import nsdc from "../Assets/nsdc.png"
+import ministery from '../Assets/ministery.png'
+import startup from '../Assets/startupindia.png'
 
 function MainComponent() {
   return (
     <>
-      {/* Desktop View - Hidden on mobile */}
       <div className="hidden md:flex mt-[35px] ml-[150px]">
         {/* Desktop Image Container */}
         <div className="w-[620px] h-[484px]">
@@ -119,21 +122,61 @@ function MainComponent() {
           </div>
         </div>
 
-        {/* Card 4 */}
-        <div className="w-[280px] h-[122px] bg-gradient-to-r from-[#2B95ED] via-[#2B95ED] to-[#14CBD5] rounded-lg p-[2px]">
-          <div className="flex items-center justify-between w-full h-full bg-white rounded-lg p-2">
-            <div className="w-1/3">
-              <img
-                src={school}
-                alt="school"
-                className="w-full h-full object-contain"
-              />
+        {/* Card 4 with Slant Lines */}
+        <div className="relative">
+          <div className="w-[280px] h-[122px] bg-gradient-to-r from-[#2B95ED] via-[#2B95ED] to-[#14CBD5] rounded-lg p-[2px]">
+            <div className="flex items-center justify-between w-full h-full bg-white rounded-lg p-2">
+              <div className="w-1/3">
+                <img
+                  src={school}
+                  alt="school"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <div className="flex flex-col justify-center w-2/3">
+                <h3 className="text-[#2B95ED] font-bold text-2xl mb-1">
+                  100+ institutes
+                </h3>
+              </div>
             </div>
-            <div className="flex flex-col justify-center w-2/3">
-              <h3 className="text-[#2B95ED] font-bold text-2xl mb-1">
-                100+ institutes
-              </h3>
-            </div>
+          </div>
+          {/* Slant Lines Image for Desktop */}
+          <img
+            src={slantLines}
+            alt="slant lines"
+            className="absolute -bottom-12 left-0 w-full h-8 object-cover"
+          />
+        </div>
+      </div>
+
+      {/* New Container with Lines - Desktop */}
+      <div className="hidden md:flex relative w-[1180px] h-[200px] mx-auto mt-[250px] bg-[#C5E5FF33]">
+        {/* First Vertical Line */}
+        <div className="absolute left-[393px] top-0 w-[1px] h-full bg-gray-300"></div>
+        {/* Second Vertical Line */}
+        <div className="absolute right-[393px] top-0 w-[1px] h-full bg-gray-300"></div>
+
+        {/* Image Sections */}
+        <div className="flex justify-between w-full h-full items-center px-8">
+          {/* Ministers Image */}
+          <div className="flex justify-center w-1/3">
+            <img
+              src={ministery}
+              alt="ministery"
+              className="w-30 h-24 object-contain"
+            />
+          </div>
+          {/* NSDC Image */}
+          <div className="flex justify-center w-1/3">
+            <img src={nsdc} alt="nsdc" className="w-30 h-24 object-contain" />
+          </div>
+          {/* Startup Image */}
+          <div className="flex justify-center w-1/3">
+            <img
+              src={startup}
+              alt="startup"
+              className="w-30 h-24 object-contain"
+            />
           </div>
         </div>
       </div>
@@ -229,16 +272,51 @@ function MainComponent() {
               </div>
             </div>
 
-            {/* Mobile Stat Card 4 */}
-            <div className="p-[2px] rounded-xl bg-gradient-to-r from-[#2B95ED] via-[#2B95ED] to-[#14CBD5] shadow-lg">
-              <div className="flex flex-col items-center justify-center bg-white rounded-xl p-4 h-full">
-                <img src={school} alt="school" className="w-12 h-12 mb-2" />
-                <h3 className="text-[#2B95ED] font-bold text-xl text-center">
-                  100+ institutes
-                </h3>
+            {/* Mobile Stat Card 4 with Slant Lines */}
+            <div className="relative">
+              <div className="p-[2px] rounded-xl bg-gradient-to-r from-[#2B95ED] via-[#2B95ED] to-[#14CBD5] shadow-lg">
+                <div className="flex flex-col items-center justify-center bg-white rounded-xl p-4 h-full">
+                  <img src={school} alt="school" className="w-12 h-12 mb-2" />
+                  <h3 className="text-[#2B95ED] font-bold text-xl text-center">
+                    100+ institutes
+                  </h3>
+                </div>
               </div>
+              {/* Slant Lines Image for Mobile */}
+              <img
+                src={slantLines}
+                alt="slant lines"
+                className="absolute -bottom-10 left-0 w-full h-6 object-cover"
+              />
             </div>
           </div>
+        </div>
+
+        {/* New Container with Lines - Mobile */}
+        <div className="relative w-full h-[400px] bg-[#C5E5FF33] mt-8 px-4 md:hidden flex flex-col items-center space-y-6">
+          {/* First Horizontal Line */}
+          <div className="absolute top-[133px] left-0 w-full h-[1px] bg-gray-300"></div>
+          {/* Second Horizontal Line */}
+          <div className="absolute top-[266px] left-0 w-full h-[1px] bg-gray-300"></div>
+
+          {/* Ministers Image (positioned at the top) */}
+          <img
+            src={ministery}
+            alt="ministery"
+            className="absolute top-[0px] w-30 h-24 object-contain"
+          />
+          {/* NSDC Image (positioned in the middle) */}
+          <img
+            src={nsdc}
+            alt="nsdc"
+            className="absolute top-[135px] w-30 h-24 object-contain"
+          />
+          {/* Startup Image (positioned at the bottom) */}
+          <img
+            src={startup}
+            alt="startup"
+            className="absolute top-[280px] w-30 h-24 object-contain"
+          />
         </div>
       </div>
     </>
