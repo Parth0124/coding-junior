@@ -4,6 +4,7 @@ import MainComponent from './Components/iMacComponent'
 import FeatureSection from './Components/featureCard'
 import Programs from './Components/programs';
 import Recognition from './Components/recognitions'
+import LearningJourney from './Components/learningJourney'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <FeatureSection />
       <Programs />
       <Recognition />
+      <LearningJourney />
     </div>
   );
 }
