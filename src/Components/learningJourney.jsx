@@ -9,7 +9,6 @@ import journeyPoint from "../Assets/journey-point.png";
 import journeyArrow from "../Assets/journey-arrow.png";
 import downwardArrow from "../Assets/continuous-downward-arrow.jpg";
 
-
 const steps = [
   {
     id: 1,
@@ -102,6 +101,7 @@ const LearningJourney = () => {
         </div>
 
         <div className="relative">
+          {/* Journey Road - visible on all screen sizes */}
           <div
             className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full"
             style={{
@@ -128,14 +128,12 @@ const LearningJourney = () => {
                       index % 2 === 0 ? "ml-auto" : "mr-auto"
                     }`}
                   >
-                    {/* Gradient Border Container */}
                     <div
                       className="relative p-[6.23px] rounded-xl"
                       style={{
                         background: `linear-gradient(270deg, #1DDDDF 0.12%, #1C408E 39.12%, #2B95ED 109.37%)`,
                       }}
                     >
-                      {/* Number Circle */}
                       <div
                         className="absolute left-1/2 -top-4 transform -translate-x-1/2 w-12 h-12 rounded-full flex items-center justify-center text-white font-bold z-20"
                         style={{ backgroundColor: "#4ABCAE" }}
@@ -164,8 +162,9 @@ const LearningJourney = () => {
                   </div>
                 </div>
 
+                {/* Journey Point and Arrow - Only visible on desktop */}
                 <div
-                  className="absolute left-1/2 transform -translate-x-1/2 z-20 flex items-center justify-center"
+                  className="absolute left-1/2 transform -translate-x-1/2 z-20 hidden lg:flex items-center justify-center"
                   style={{ top: "50%" }}
                 >
                   <div
