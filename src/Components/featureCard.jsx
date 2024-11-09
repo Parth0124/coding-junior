@@ -1,4 +1,3 @@
-import React from "react";
 import recorder from "../Assets/recorder.png";
 import notebook from "../Assets/notebook.png";
 import flashcard from "../Assets/flashcard.png";
