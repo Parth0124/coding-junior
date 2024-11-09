@@ -8,12 +8,16 @@ import journeyRoad from "../Assets/journey-road.png";
 import journeyPoint from "../Assets/journey-point.png";
 import journeyArrow from "../Assets/journey-arrow.png";
 import downwardArrow from "../Assets/continuous-downward-arrow.jpg";
-import degree from '../Assets/degree.png'
-import online from '../Assets/online.png'
-import test from '../Assets/tests.png'
-import resume from '../Assets/Resume.png'
-import bag from '../Assets/office-bag.png'
-import interview from '../Assets/interview.png'
+import degree from "../Assets/degree.png";
+import online from "../Assets/online.png";
+import test from "../Assets/tests.png";
+import resume from "../Assets/Resume.png";
+import bag from "../Assets/office-bag.png";
+import interview from "../Assets/interview.png";
+import qatester from "../Assets/qa-tester.png";
+import softwareengineer from "../Assets/software-engineer.png";
+import aiengineer from "../Assets/ai-engineer.png";
+import datascientist from "../Assets/data-scientist.png";
 
 const steps = [
   {
@@ -60,10 +64,30 @@ const steps = [
   },
 ];
 
+const careerPaths = [
+  {
+    title: "QA Tester",
+    image: qatester,
+  },
+  {
+    title: "Software Engineer",
+    image: softwareengineer,
+  },
+  {
+    title: "Data Scientist",
+    image: datascientist,
+  },
+  {
+    title: "AI Engineer",
+    image: aiengineer,
+  },
+];
+
 const LearningJourney = () => {
   return (
     <section className="py-20 px-6 relative overflow-hidden">
       <div className="max-w-7xl mx-auto">
+        {/* Header Section */}
         <div className="text-center mb-20">
           <h2 className="text-4xl font-bold mb-4">
             Because We Offer What You Need
@@ -82,6 +106,7 @@ const LearningJourney = () => {
           </div>
         </div>
 
+        {/* Students Image Section */}
         <div className="relative w-full max-w-2xl mx-auto mb-16">
           <div className="flex items-start justify-center relative">
             <div className="relative">
@@ -101,7 +126,6 @@ const LearningJourney = () => {
                 className="absolute top-[-30px] left-1/2 transform -translate-x-1/2 w-3/4 h-auto z-10"
               />
             </div>
-
             <div className="absolute right-[-350px] top-1/2 transform -translate-y-1/2">
               <img
                 src={downwardArrow}
@@ -112,8 +136,8 @@ const LearningJourney = () => {
           </div>
         </div>
 
-        <div className="relative">
-          {/* Journey Road - visible on all screen sizes */}
+        {/* Journey Steps Section */}
+        <div className="relative mb-20">
           <div
             className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full"
             style={{
@@ -121,7 +145,6 @@ const LearningJourney = () => {
               backgroundSize: "cover",
             }}
           />
-
           <div className="space-y-12">
             {steps.map((step, index) => (
               <div
@@ -152,7 +175,6 @@ const LearningJourney = () => {
                       >
                         {step.id}
                       </div>
-
                       <div className="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 max-w-md mx-auto relative z-10">
                         <div
                           className={`flex items-center gap-4 mb-4 ${
@@ -180,7 +202,6 @@ const LearningJourney = () => {
                   </div>
                 </div>
 
-                {/* Journey Point and Arrow - Only visible on desktop */}
                 <div
                   className="absolute left-1/2 transform -translate-x-1/2 z-20 hidden lg:flex items-center justify-center"
                   style={{ top: "50%" }}
@@ -216,6 +237,63 @@ const LearningJourney = () => {
                 <div className="w-full md:w-1/2" />
               </div>
             ))}
+          </div>
+        </div>
+
+        {/* Career Paths Section with Wave Background */}
+        <div className="relative mt-20">
+          {/* Background Wave SVGs */}
+          <div className="absolute inset-0 w-full h-full">
+            <svg
+              className="absolute top-0 w-full h-full"
+              viewBox="0 0 1440 400"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="none"
+            >
+              {/* Upper turquoise wave */}
+              <path
+                d="M0 0L120 22.2222C240 44.4444 480 88.8889 720 88.8889C960 88.8889 1200 44.4444 1320 22.2222L1440 0V266.667L1320 288.889C1200 311.111 960 355.556 720 355.556C480 355.556 240 311.111 120 288.889L0 266.667V0Z"
+                fill="#4ABCAE"
+              />
+              {/* Lower blue wave */}
+              <path
+                d="M0 133.333L120 155.556C240 177.778 480 222.222 720 222.222C960 222.222 1200 177.778 1320 155.556L1440 133.333V400H1320C1200 400 960 400 720 400C480 400 240 400 120 400H0V133.333Z"
+                fill="#2B95ED"
+              />
+            </svg>
+          </div>
+
+          {/* Career Paths Content */}
+          <div className="relative z-30 pt-20 pb-40">
+            <div className="max-w-7xl mx-auto">
+              <h2 className="text-4xl font-bold text-center mb-16 text-dark">
+                Career Paths
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
+                {careerPaths.map((career, index) => (
+                  <div
+                    key={career.title}
+                    className="transform hover:scale-105 transition-transform duration-300"
+                  >
+                    <div className="bg-white rounded-lg shadow-xl overflow-hidden h-full">
+                      <div className="relative h-64">
+                        <img
+                          src={career.image}
+                          alt={career.title}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                      <div className="p-4">
+                        <h3 className="text-xl font-semibold text-center text-gray-800">
+                          {career.title}
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>
