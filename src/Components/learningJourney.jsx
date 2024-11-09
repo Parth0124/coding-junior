@@ -8,41 +8,53 @@ import journeyRoad from "../Assets/journey-road.png";
 import journeyPoint from "../Assets/journey-point.png";
 import journeyArrow from "../Assets/journey-arrow.png";
 import downwardArrow from "../Assets/continuous-downward-arrow.jpg";
+import degree from '../Assets/degree.png'
+import online from '../Assets/online.png'
+import test from '../Assets/tests.png'
+import resume from '../Assets/Resume.png'
+import bag from '../Assets/office-bag.png'
+import interview from '../Assets/interview.png'
 
 const steps = [
   {
     id: 1,
     title: "Custom Specialization",
+    image: degree,
     description:
       "We understand that each student is unique, so we empower you to design your learning and explore a specialization that best suits your goals.",
   },
   {
     id: 2,
     title: "Virtual Labs",
+    image: online,
     description:
       "We launch you straight into the experience of accessing a fully equipped lab from anywhere, just with an internet connection.",
   },
   {
     id: 3,
     title: "AI Tests",
+    image: test,
     description:
       "We understand that learning alone isn't enough, so we assess your progress with AI-powered tests to validate your progress.",
   },
   {
     id: 4,
     title: "Resume Builder",
+    image: resume,
     description:
       "We not only support skill development but also ensure its highlighted properly by helping you craft your resume to help you stand out from the crowd.",
   },
   {
     id: 5,
     title: "Placement Preparation",
+    image: bag,
     description:
       "We prepare you for the future by equipping you with the best tools by providing you with thorough placement preparation.",
   },
   {
     id: 6,
     title: "AI Interviews",
+    image: interview,
     description:
       "Interviews can be challenging, so we use AI to conduct mock interviews, helping our students build confidence and be fully prepared.",
   },
@@ -149,7 +161,13 @@ const LearningJourney = () => {
                               : "md:flex-row"
                           }`}
                         >
-                          <div className="p-3 bg-gradient-to-br from-blue-500 to-teal-500 rounded-lg"></div>
+                          <div className="p-3 rounded-lg">
+                            <img
+                              src={step.image}
+                              alt={step.title}
+                              className="w-12 h-12 object-cover"
+                            />
+                          </div>
                           <h3 className="text-xl font-bold text-gray-800">
                             {step.title}
                           </h3>
