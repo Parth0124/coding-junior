@@ -9,6 +9,7 @@ import java from "../Assets/java.png";
 import css from "../Assets/css.png";
 
 const testimonials = [
+  //testimonial data
   {
     id: 1,
     avatar: profilePicture,
@@ -40,6 +41,7 @@ const randomImages = [reactjs, flutter, js, java, css];
 function Testimonials() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
+  // functionality to swipe between testimonial cards.
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % testimonials.length);
   };
@@ -138,7 +140,7 @@ function Testimonials() {
           ))}
         </div>
 
-        {/* Static images outside the card in the blue area */}
+        {/* flutter, reactjs, css, js and java images placed randomly outside the testimonial card. */}
         <div className="absolute top-4 left-4 z-10 hidden md:block">
           <img
             src={randomImages[0]}

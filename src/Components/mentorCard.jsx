@@ -28,7 +28,7 @@ const MentorCard = ({
           <img
             src={image}
             alt={`${firstName} ${lastName}`}
-            className="w-32 h-32 object-cover rounded-full border-4 border-white"
+            className="w-60 h-50 "
           />
         </div>
 

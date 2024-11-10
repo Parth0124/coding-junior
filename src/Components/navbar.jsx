@@ -6,7 +6,7 @@ function Navbar() {
 
   return (
     <>
-      {/* First Navbar */}
+      {/* Top navbar with one line text */}
       <nav className="bg-cyan-100">
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-center">
@@ -39,7 +39,7 @@ function Navbar() {
             onClick={() => setMenuOpen(!menuOpen)}
             className="text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700"
           >
-            {/* Hamburger icon */}
+            {/* Hamburger icon for mobile view */}
             <svg
               className="h-6 w-6"
               fill="none"
@@ -57,7 +57,7 @@ function Navbar() {
           </button>
         </div>
 
-        {/* Mobile Menu */}
+        {/* Mobile Menu on openeing hamburger icon */}
         {menuOpen && (
           <div className="px-4 pt-2 pb-4 space-y-1">
             <a

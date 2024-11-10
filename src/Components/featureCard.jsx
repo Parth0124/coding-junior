@@ -7,6 +7,7 @@ import ebook from "../Assets/e-book.png";
 import code from "../Assets/code.png";
 
 const FeatureSection = () => {
+  //data for features card
   const features = [
     {
       icon: notebook,

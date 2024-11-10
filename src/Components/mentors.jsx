@@ -3,9 +3,9 @@ import MentorCard from "./mentorCard";
 import vikas from "../Assets/vikas-shukla.png";
 import sumit from "../Assets/sumit-bhat.png";
 import neelu from "../Assets/neelu-verma.png";
-import lastCardPolygon from "../Assets/last-card-polygon.jpg";
 
 const mentors = [
+  //data for mentor cards
   {
     id: 1,
     firstName: "Vikas",
@@ -55,24 +55,10 @@ const Mentors = () => (
         </div>
       </div>
       <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center">
+        { /* mentor cards mapped */}
         {mentors.map((mentor) => (
           <MentorCard key={mentor.id} {...mentor} />
         ))}
-        {/* Polygon image positioned above the last card */}
-        <img
-          src={lastCardPolygon}
-          alt="Polygon Decoration"
-          style={{
-            position: "absolute",
-            width: "300px",
-            height: "300px",
-            top: "8371px",
-            left: "1231.93px",
-            transform: "rotate(29.76deg)",
-            clipPath: "inset(0 0 50% 0)", // Show only top half
-            zIndex: -1, // Behind the last MentorCard
-          }}
-        />
       </div>
     </div>
   </section>

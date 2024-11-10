@@ -8,6 +8,7 @@ import circle from "../Assets/lined-circle.jpg";
 
 function Media() {
   return (
+    // media section title
     <div className="max-w-[1440px] mx-auto flex flex-col justify-center items-center px-3 gap-6 md:gap-10 lg:gap-12 py-12">
       <h1 className="text-gray-600 text-3xl md:text-4xl lg:text-5xl text-center font-medium">
         We’ve Also Been In <span className="text-[#008D8F]">News!</span>

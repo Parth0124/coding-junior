@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <div className="w-full flex justify-center items-center">
       <div className="w-full grid grid-cols-1 md:grid-cols-5">
-        {/* Left container taking up 40% width on medium screens */}
+        {/* Left container with contact form and methods */}
         <div className="w-full bg-[#164D8C] py-20 md:py-28 px-4 text-white flex flex-col gap-5 md:gap-8 justify-start items-start min-h-full md:px-10 md:col-span-2">
           <h1 className="text-3xl text-white">Let’s keep in touch!</h1>
           <p className="font-thin text-white">
@@ -49,7 +49,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Right container taking up 60% width on medium screens */}
+        {/* Right container with about-us, courses and social media icons */}
         <div className="w-full bg-gradient-to-t from-[#2595F1] to-[#15568B] py-20 px-4 text-white flex flex-col gap-16 justify-start items-start md:py-28 md:pl-10 md:col-span-3 lg:flex-row lg:flex-wrap xl:flex-nowrap">
           <div className="flex flex-col justify-start items-start gap-4 space-y-4">
             <h2 className="font-bold text-xl">Courses</h2>

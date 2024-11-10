@@ -20,6 +20,7 @@ import aiengineer from "../Assets/ai-engineer.png";
 import datascientist from "../Assets/data-scientist.png";
 
 const steps = [
+  //journey points data
   {
     id: 1,
     title: "Custom Specialization",
@@ -87,7 +88,7 @@ const LearningJourney = () => {
   return (
     <section className="py-20 px-6 relative overflow-hidden">
       <div className="max-w-7xl mx-auto">
-        {/* Header Section */}
+        {/* Journey Path Text */}
         <div className="text-center mb-20">
           <h2 className="text-4xl font-bold mb-4">
             Because We Offer What You Need
@@ -242,6 +243,7 @@ const LearningJourney = () => {
 
         {/* Career Paths Section with Wave Background */}
         <div className="relative mt-20">
+
           {/* Background Wave SVGs */}
           <div className="absolute inset-0 w-full h-full">
             <svg
@@ -251,7 +253,7 @@ const LearningJourney = () => {
               xmlns="http://www.w3.org/2000/svg"
               preserveAspectRatio="none"
             >
-              {/* Upper turquoise wave */}
+              {/* Upper green wave */}
               <path
                 d="M0 0L120 22.2222C240 44.4444 480 88.8889 720 88.8889C960 88.8889 1200 44.4444 1320 22.2222L1440 0V266.667L1320 288.889C1200 311.111 960 355.556 720 355.556C480 355.556 240 311.111 120 288.889L0 266.667V0Z"
                 fill="#4ABCAE"

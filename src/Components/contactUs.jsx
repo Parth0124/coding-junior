@@ -17,11 +17,13 @@ function Contact() {
           alt=""
           className="absolute left-12 -top-16 -z-10 w-20"
         />
+        {/* image for contact form */}
         <img
           src={person}
           alt=""
           className="rounded-lg md:w-1/2 md:h-[500px] object-cover transform -scale-x-100"
         />
+        {/* contact us form */}
         <div className="flex flex-col justify-center items-start w-full gap-5 lg:gap-10">
           <h1 className="text-2xl font-medium text-[#2B95ED] lg:text-4xl md:w-2/3">
             Find Out More Reasons To Stay

@@ -14,6 +14,7 @@ function ProgramCard({
         reverse ? "md:flex-row-reverse" : "md:flex-row"
       } gap-8 items-center bg-white rounded-2xl px-4 py-6 shadow-lg transition-all duration-300 group max-w-4xl mx-auto`} // Reduced width and padding for the card
     >
+      {/* image for program card */}
       <div className="w-full md:w-1/2 relative">
         <img
           src={image}
@@ -22,6 +23,7 @@ function ProgramCard({
         />
       </div>
 
+      {/* text for program card */}
       <div className="w-full md:w-1/2 space-y-4">
         <div className="flex items-center gap-3">
           <h3 className="text-2xl font-bold text-gray-800">{title}</h3>
@@ -29,7 +31,7 @@ function ProgramCard({
 
         <p className="text-gray-800 font-medium">{subtitle}</p>
 
-        {/* Apply line-clamp for the description */}
+        {/* Applied line-clamp for the description */}
         <p className="text-gray-600 leading-relaxed line-clamp-2">
           {description}
         </p>

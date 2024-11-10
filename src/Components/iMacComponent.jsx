@@ -29,9 +29,9 @@ function MainComponent() {
         </div>
       </div>
 
-      {/* Desktop Card Container - Hidden on mobile */}
+      {/* Desktop Card Container */}
       <div className="hidden md:flex absolute w-[480px] h-[300px] top-[340px] left-[779px] gap-0 border-t-2 border-l-0 border-r-0 border-b-0 rounded-tl-[12px] space-x-4 p-4">
-        {/* Box 1 */}
+        {/* campus training card */}
         <div className="w-[235px] h-[250px] p-[2px] rounded-lg bg-gradient-to-r from-[#2B95ED] via-[#2B95ED] to-[#14CBD5]">
           <div className="flex flex-col items-center justify-between w-full h-full bg-white rounded-lg py-4">
             <img src={house} alt="house" className="w-16 h-16 mb-2" />
@@ -48,7 +48,7 @@ function MainComponent() {
           </div>
         </div>
 
-        {/* Box 2 */}
+        {/* professional training card */}
         <div className="w-[235px] h-[250px] p-[2px] rounded-lg bg-gradient-to-r from-[#2B95ED] via-[#2B95ED] to-[#14CBD5]">
           <div className="flex flex-col items-center justify-between w-full h-full bg-white rounded-lg py-4">
             <img src={building} alt="building" className="w-16 h-16 mb-2" />
@@ -66,9 +66,9 @@ function MainComponent() {
         </div>
       </div>
 
-      {/* Desktop Stats Cards - Hidden on mobile */}
+      {/* Desktop Stats Cards */}
       <div className="hidden md:grid absolute top-[733px] left-[110px] grid-cols-4 gap-4">
-        {/* Card 1 */}
+        {/* Cities card */}
         <div className="w-[280px] h-[122px] bg-gradient-to-r from-[#2B95ED] via-[#2B95ED] to-[#14CBD5] rounded-lg p-[2px]">
           <div className="flex items-center justify-between w-full h-full bg-white rounded-lg p-2">
             <div className="w-1/3">
@@ -86,7 +86,7 @@ function MainComponent() {
           </div>
         </div>
 
-        {/* Card 2 */}
+        {/* card with module info */}
         <div className="w-[280px] h-[122px] bg-gradient-to-r from-[#2B95ED] via-[#2B95ED] to-[#14CBD5] rounded-lg p-[2px]">
           <div className="flex items-center justify-between w-full h-full bg-white rounded-lg p-2">
             <div className="w-1/3">
@@ -104,7 +104,7 @@ function MainComponent() {
           </div>
         </div>
 
-        {/* Card 3 */}
+        {/* card with student strength */}
         <div className="w-[280px] h-[122px] bg-gradient-to-r from-[#2B95ED] via-[#2B95ED] to-[#14CBD5] rounded-lg p-[2px]">
           <div className="flex items-center justify-between w-full h-full bg-white rounded-lg p-2">
             <div className="w-1/3">
@@ -122,7 +122,7 @@ function MainComponent() {
           </div>
         </div>
 
-        {/* Card 4 with Slant Lines */}
+        {/* card with institute info */}
         <div className="relative">
           <div className="w-[280px] h-[122px] bg-gradient-to-r from-[#2B95ED] via-[#2B95ED] to-[#14CBD5] rounded-lg p-[2px]">
             <div className="flex items-center justify-between w-full h-full bg-white rounded-lg p-2">
@@ -140,7 +140,7 @@ function MainComponent() {
               </div>
             </div>
           </div>
-          {/* Slant Lines Image for Desktop */}
+          {/* Slant Lines Image under card 4 */}
           <img
             src={slantLines}
             alt="slant lines"
@@ -149,11 +149,10 @@ function MainComponent() {
         </div>
       </div>
 
-      {/* New Container with Lines - Desktop */}
+      {/* container with 3 logos */}
       <div className="hidden md:flex relative w-[1180px] h-[200px] mx-auto mt-[250px] bg-[#C5E5FF33]">
-        {/* First Vertical Line */}
+        {/* 2 seperation lines between container */}
         <div className="absolute left-[393px] top-0 w-[1px] h-full bg-gray-300"></div>
-        {/* Second Vertical Line */}
         <div className="absolute right-[393px] top-0 w-[1px] h-full bg-gray-300"></div>
 
         {/* Image Sections */}
@@ -182,8 +181,9 @@ function MainComponent() {
       </div>
 
       {/* Mobile View */}
+
       <div className="md:hidden">
-        {/* Mobile Header Section */}
+        {/* Header Section for Mobile */}
         <div className="px-4 pt-6 pb-8 bg-white">
           <div className="w-full h-[200px] mb-6">
             <img
@@ -200,7 +200,7 @@ function MainComponent() {
 
         {/* Mobile Training Cards */}
         <div className="px-4 space-y-4 mb-8">
-          {/* Mobile Training Card 1 */}
+          {/* campus training card for mobile */}
           <div className="w-full p-[2px] rounded-xl bg-gradient-to-r from-[#2B95ED] via-[#2B95ED] to-[#14CBD5] shadow-lg">
             <div className="flex flex-col items-center bg-white rounded-xl p-6">
               <img src={house} alt="house" className="w-20 h-20 mb-4" />
@@ -217,7 +217,7 @@ function MainComponent() {
             </div>
           </div>
 
-          {/* Mobile Training Card 2 */}
+          {/* professional training card for mobile */}
           <div className="w-full p-[2px] rounded-xl bg-gradient-to-r from-[#2B95ED] via-[#2B95ED] to-[#14CBD5] shadow-lg">
             <div className="flex flex-col items-center bg-white rounded-xl p-6">
               <img src={building} alt="building" className="w-20 h-20 mb-4" />
@@ -235,10 +235,10 @@ function MainComponent() {
           </div>
         </div>
 
-        {/* Mobile Stats Grid */}
+        {/* Stats card for mobile */}
         <div className="px-4 pb-8">
           <div className="grid grid-cols-2 gap-4">
-            {/* Mobile Stat Card 1 */}
+            {/* citi stats */}
             <div className="p-[2px] rounded-xl bg-gradient-to-r from-[#2B95ED] via-[#2B95ED] to-[#14CBD5] shadow-lg">
               <div className="flex flex-col items-center justify-center bg-white rounded-xl p-4 h-full">
                 <img src={location} alt="location" className="w-12 h-12 mb-2" />
@@ -248,7 +248,7 @@ function MainComponent() {
               </div>
             </div>
 
-            {/* Mobile Stat Card 2 */}
+            {/* modules card */}
             <div className="p-[2px] rounded-xl bg-gradient-to-r from-[#2B95ED] via-[#2B95ED] to-[#14CBD5] shadow-lg">
               <div className="flex flex-col items-center justify-center bg-white rounded-xl p-4 h-full">
                 <img src={notes} alt="notes" className="w-12 h-12 mb-2" />
@@ -258,7 +258,7 @@ function MainComponent() {
               </div>
             </div>
 
-            {/* Mobile Stat Card 3 */}
+            {/* student stats card */}
             <div className="p-[2px] rounded-xl bg-gradient-to-r from-[#2B95ED] via-[#2B95ED] to-[#14CBD5] shadow-lg">
               <div className="flex flex-col items-center justify-center bg-white rounded-xl p-4 h-full">
                 <img
@@ -272,7 +272,7 @@ function MainComponent() {
               </div>
             </div>
 
-            {/* Mobile Stat Card 4 with Slant Lines */}
+            {/* institutes stats card */}
             <div className="relative">
               <div className="p-[2px] rounded-xl bg-gradient-to-r from-[#2B95ED] via-[#2B95ED] to-[#14CBD5] shadow-lg">
                 <div className="flex flex-col items-center justify-center bg-white rounded-xl p-4 h-full">
@@ -292,11 +292,11 @@ function MainComponent() {
           </div>
         </div>
 
-        {/* New Container with Lines - Mobile */}
+        {/* container with 3 logos */}
         <div className="relative w-full h-[400px] bg-[#C5E5FF33] mt-8 px-4 md:hidden flex flex-col items-center space-y-6">
-          {/* First Horizontal Line */}
+
+          {/* Decorative line for container */}
           <div className="absolute top-[133px] left-0 w-full h-[1px] bg-gray-300"></div>
-          {/* Second Horizontal Line */}
           <div className="absolute top-[266px] left-0 w-full h-[1px] bg-gray-300"></div>
 
           {/* Ministers Image (positioned at the top) */}

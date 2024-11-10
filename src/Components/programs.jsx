@@ -47,7 +47,7 @@ function Programs() {
         <div className="space-y-8 relative">
           {programs.map((program, index) => (
             <div key={index} className="relative">
-              {/* Dotted Design positioned behind the cards (only visible on desktop/tablet) */}
+              {/* Dotted Design behind the cards (only visible on desktop) */}
               {index === 0 && (
                 <div
                   className="absolute top-[3px] right-[165px] w-40 h-40 sm:w-48 sm:h-48 lg:w-56 lg:h-56 bg-no-repeat bg-contain hidden sm:block"
@@ -69,7 +69,7 @@ function Programs() {
                 ></div>
               )}
 
-              {/* Program Card with higher z-index to create overlap */}
+              {/* Program Card with higher z-index to create overlap feature on binary and dottedDesign images */}
               <div className="relative z-10">
                 <ProgramCard {...program} />
               </div>
@@ -77,8 +77,6 @@ function Programs() {
           ))}
         </div>
       </div>
-
-      {/* Removed Mobile Specific Dotted Design section since we want no images on mobile */}
     </section>
   );
 }

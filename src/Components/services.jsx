@@ -28,19 +28,19 @@ function Services() {
           alt=""
           className="w-50 md:left-[113px] relative z-10"
         />
-        {/* Top right curve - hidden on mobile */}
+        {/* Top right curve for phone image */}
         <img
           src={topRightCurve}
           alt=""
           className="hidden md:block absolute top-[100px] right-[30px] w-1/8"
         />
-        {/* Left center strap - hidden on mobile */}
+        {/* Left center strap for phone image */}
         <img
           src={leftCenterStrap}
           alt=""
           className="hidden md:block absolute top-[160px] left-10 w-1/8-translate-y-1/3 z-0"
         />
-        {/* Left center curve - hidden on mobile */}
+        {/* Left center curve for phone image */}
         <img
           src={leftCenterCurve}
           alt=""
@@ -52,6 +52,9 @@ function Services() {
           Wanna see more? <br />
           Join us!
         </h1>
+
+      { /* services positioned next to the phone image */}
+
         <div className="flex flex-col md:flex-row justify-start items-start gap-8">
           <div className="flex flex-col justify-center items-start gap-8">
             <div className="flex justify-start items-center gap-3">
@@ -116,6 +119,9 @@ function Services() {
               />
             </div>
           </div>
+
+          {/* downlaod button google play store and app store */}
+
           <div className="flex items-center gap-4">
             <img
               src={googlePlay}

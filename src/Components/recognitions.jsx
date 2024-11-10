@@ -8,15 +8,15 @@ function Recognition() {
   return (
     <section className="py-20 px-6 relative overflow-hidden">
       {/* Decorative elements */}
-
       <div className="max-w-7xl mx-auto relative">
-        {/* Add background gradient to the entire container */}
+
+        {/* background gradient to the entire container */}
         <div
           className="relative p-8 rounded-lg"
           style={{
             background:
               "linear-gradient(270deg, #1DDDDF 2.41%, #1C408E 41.9%, #2B95ED 113.04%)",
-            borderRadius: "12px", // Optional: adds rounded corners for a cleaner look inside the container
+            borderRadius: "12px",
           }}
         >
           <div className="text-center mb-16 relative">
