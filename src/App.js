@@ -9,6 +9,7 @@ import Testimonials from './Components/testimonial'
 import Mentors from './Components/mentors'
 import Media from './Components/media'
 import Services from './Components/services'
+import Contact from './Components/contactUs'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Mentors />
       <Media />
       <Services />
+      <Contact />
     </div>
   );
 }
