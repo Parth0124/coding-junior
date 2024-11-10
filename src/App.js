@@ -8,6 +8,7 @@ import LearningJourney from './Components/learningJourney'
 import Testimonials from './Components/testimonial'
 import Mentors from './Components/mentors'
 import Media from './Components/media'
+import Services from './Components/services'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Testimonials />
       <Mentors />
       <Media />
+      <Services />
     </div>
   );
 }
