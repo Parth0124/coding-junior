@@ -7,6 +7,7 @@ import Recognition from './Components/recognitions'
 import LearningJourney from './Components/learningJourney'
 import Testimonials from './Components/testimonial'
 import Mentors from './Components/mentors'
+import Media from './Components/media'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <LearningJourney />
       <Testimonials />
       <Mentors />
+      <Media />
     </div>
   );
 }
