@@ -20,7 +20,7 @@ function Contact() {
         <img
           src={person}
           alt=""
-          className="rounded-md md:w-1/2 md:h-[500px] object-cover transform -scale-x-100"
+          className="rounded-lg md:w-1/2 md:h-[500px] object-cover transform -scale-x-100"
         />
         <div className="flex flex-col justify-center items-start w-full gap-5 lg:gap-10">
           <h1 className="text-2xl font-medium text-[#2B95ED] lg:text-4xl md:w-2/3">

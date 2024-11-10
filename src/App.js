@@ -10,6 +10,7 @@ import Mentors from './Components/mentors'
 import Media from './Components/media'
 import Services from './Components/services'
 import Contact from './Components/contactUs'
+import Footer from './Components/footer'
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <Media />
       <Services />
       <Contact />
+      <Footer />
     </div>
   );
 }
